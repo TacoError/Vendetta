@@ -84,7 +84,7 @@ class PlayerSession {
     }
 
     public function getMessage(string $name) : string {
-        return Main::getInstance()->getMessages()[$this->language][$name] ?? "Could not find message.";
+        return Main::getInstance()->getMessages()[$this->language][$name] ?? "§cCould not find message. Please contact server administration.";
     }
 
     public function getFaction() : string {
@@ -96,6 +96,9 @@ class PlayerSession {
     }
 
     public function setFaction(string $new) : void {
+        if ($new == "") {
+            $this->setChatMode(self::CHAT_PUBLIC);
+        }
         $this->faction = $new;
     }
 

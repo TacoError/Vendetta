@@ -23,6 +23,13 @@ class Faction {
         self::RANK_RECRUIT => "Recruit"
     ];
 
+    public const RANK_TO_PREFIX = [
+        self::RANK_OWNER => "§e**",
+        self::RANK_CAPTAIN => "§e*",
+        self::RANK_MEMBER => "",
+        self::RANK_RECRUIT => "§7-"
+    ];
+
     private string $name;
 
     private string $description;
@@ -100,7 +107,7 @@ class Faction {
     public function messageEntireFactionTranslated(string $msg, ...$values) : void {
         /** @var Player $member */
         foreach($this->getOnlineMembers() as $member) {
-            $member->sendMessage(sprintf(Manager::getSessionManager()->getSession($member)->getMessage($msg), $values));
+            $member->sendMessage(sprintf(Manager::getSessionManager()->getSession($member)->getMessage($msg), ...$values));
         }
     }
 
@@ -188,6 +195,23 @@ class Faction {
                 throw new Error("Could not find role \"" . $role . "\" whilst adding member.");
         }
         $this->messageEntireFactionTranslated("member-join", $name);
+    }
+
+    public function removeMember(Player|string $member) : void {
+        if ($member instanceof Player) {
+            $member = $member->getName();
+        }
+        switch($this->getRank($member)) {
+            case self::RANK_CAPTAIN:
+                unset($this->officers[$member]);
+                break;
+            case self::RANK_MEMBER:
+                unset($this->members[$member]);
+                break;
+            case self::RANK_RECRUIT:
+                unset($this->recruits[$member]);
+                break;
+        }
     }
 
 }

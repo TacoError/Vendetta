@@ -3,10 +3,12 @@
 use CortexPE\Commando\BaseCommand;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
+use taco\vendetta\factions\commands\subcommands\ChatSubCommand;
 use taco\vendetta\factions\commands\subcommands\CreateSubCommand;
 use taco\vendetta\factions\commands\subcommands\DisbandSubCommand;
 use taco\vendetta\factions\commands\subcommands\InviteSubCommand;
 use taco\vendetta\factions\commands\subcommands\JoinSubCommand;
+use taco\vendetta\factions\commands\subcommands\KickSubCommand;
 use taco\vendetta\Main;
 use taco\vendetta\Manager;
 
@@ -21,6 +23,8 @@ class FactionCommand extends BaseCommand {
         $this->registerSubCommand(new InviteSubCommand());
         $this->registerSubCommand(new DisbandSubCommand());
         $this->registerSubCommand(new JoinSubCommand());
+        $this->registerSubCommand(new ChatSubCommand());
+        $this->registerSubCommand(new KickSubCommand());
     }
 
     public function onRun(CommandSender $sender, string $aliasUsed, array $args) : void {

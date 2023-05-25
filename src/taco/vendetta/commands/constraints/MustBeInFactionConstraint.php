@@ -7,8 +7,9 @@ use taco\vendetta\Manager;
 
 class MustBeInFactionConstraint extends BaseConstraint {
 
+    /** @var Player $sender */
     public function test(CommandSender $sender, string $aliasUsed, array $args): bool {
-        return $this->isVisibleTo($sender);
+        return Manager::getSessionManager()->getSession($sender)->isInFaction();
     }
 
     /** @var Player $sender */
@@ -16,9 +17,9 @@ class MustBeInFactionConstraint extends BaseConstraint {
         $sender->sendMessage(Manager::getSessionManager()->getSession($sender)->getMessage("must-be-in-faction"));
     }
 
-    /** @var Player $sender */
     public function isVisibleTo(CommandSender $sender) : bool {
-        return Manager::getSessionManager()->getSession($sender)->isInFaction();
+        // This has to be true because Commando won't show the command otherwise
+        return true;
     }
 
 }

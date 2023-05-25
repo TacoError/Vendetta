@@ -1,7 +1,6 @@
 <?php namespace taco\vendetta\commands\arguments;
 
 use CortexPE\Commando\args\StringEnumArgument;
-use Error;
 use pocketmine\command\CommandSender;
 use taco\vendetta\Manager;
 use taco\vendetta\ranks\Rank;
@@ -13,11 +12,7 @@ class RankArgument extends StringEnumArgument {
     }
 
     public function getEnumValues() : array {
-        try {
-            return Manager::getRankManager()->getRankList() ?? ["Guest"];
-        } catch(Error $e) {
-            return ["Guest"];
-        }
+        return Manager::getRankManager()->getRankList() ?? ["Guest"];
     }
 
     public function canParse(string $testString, CommandSender $sender) : bool {

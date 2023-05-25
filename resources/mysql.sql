@@ -77,4 +77,8 @@ DROP TABLE faction_players;
 -- #{ drop_factions
 DROP TABLE factions;
 -- #}
+-- #{ delete_faction
+-- #    :name string
+DELETE FROM factions WHERE name = :name;
+-- #}
 

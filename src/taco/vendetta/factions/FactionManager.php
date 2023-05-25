@@ -54,4 +54,9 @@ class FactionManager {
         return array_values($this->factions);
     }
 
+    public function unsetFaction(string $name) : void {
+        unset($this->factions[$name]);
+        Main::getInstance()->getDB()->executeGeneric("delete_faction", ["name" => $name]);
+    }
+
 }

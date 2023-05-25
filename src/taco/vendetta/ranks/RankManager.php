@@ -2,7 +2,8 @@
 
 use pocketmine\Server;
 use taco\vendetta\Main;
-use taco\vendetta\ranks\commands\SetRankCommand;
+use taco\vendetta\ranks\commands\AddPermissionCommand;
+use taco\vendetta\ranks\commands\RemovePermissionCommand;
 
 class RankManager {
 
@@ -14,7 +15,8 @@ class RankManager {
             $this->ranks[$name] = new Rank($name, $data["fancy-name"], $data["permissions"]);
         }
         Server::getInstance()->getCommandMap()->registerAll("Vendetta", [
-            new SetRankCommand()
+            new AddPermissionCommand(),
+            new RemovePermissionCommand()
         ]);
     }
 

@@ -15,8 +15,10 @@ class MustBeFactionRankConstraint extends BaseConstraint {
         $this->rankNeeded = $rank;
     }
 
+    /** @var Player $sender */
     public function test(CommandSender $sender, string $aliasUsed, array $args): bool {
-        return $this->isVisibleTo($sender);
+        $faction = Manager::getFactionManager()->getFactionFromName(Manager::getSessionManager()->getSession($sender)->getFaction());
+        return !is_null($faction) && $faction->getRank($sender) <= $this->rankNeeded;
     }
 
     /** @var Player $sender */
@@ -24,10 +26,9 @@ class MustBeFactionRankConstraint extends BaseConstraint {
         $sender->sendMessage(Manager::getSessionManager()->getSession($sender)->getMessage("must-be-higher-rank"));
     }
 
-    /** @var Player $sender */
     public function isVisibleTo(CommandSender $sender) : bool {
-        $faction = Manager::getFactionManager()->getFactionFromName(Manager::getSessionManager()->getSession($sender)->getFaction());
-        return !is_null($faction) && $faction->getRank($sender) <= $this->rankNeeded;
+        // This has to be true because Commando won't show the command otherwise
+        return true;
     }
 
 }
