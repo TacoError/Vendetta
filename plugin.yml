@@ -1,0 +1,14 @@
+name: Vendetta
+author: Taco
+description: Factions Core for PM4
+website: https://github.com/TacoError
+
+version: 1.0.0
+api: 4.0.0
+main: taco\vendetta\Main
+
+permissions:
+  ranks.management:
+    description: Manage ranks and permissions.
+    default: op
+

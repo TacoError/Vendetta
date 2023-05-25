@@ -1,0 +1,9 @@
+factions:
+  max-members: 5
+  max-allies: 1
+  max-claims: 10
+
+ranks:
+  Guest:
+    fancy-name: "Guest"
+    permissions: []
