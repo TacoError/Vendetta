@@ -87,7 +87,7 @@ class Faction {
     }
 
     public function save() : void {
-        Main::getInstance()->getDB()->executeGeneric("set_data_faction", [
+        Main::getInstance()->getDB()->executeGeneric("factions.set", [
             "name" => $this->name,
             "description" => $this->description,
             "creationTimeStamp" => $this->creationTimeStamp,

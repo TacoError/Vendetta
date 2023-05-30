@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a12e1c91-efaa-495d-a2ad-e45179d704f7" name="Changes" comment="Shenanigans">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taco/vendetta/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/taco/vendetta/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taco/vendetta/factions/Faction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/taco/vendetta/factions/Faction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taco/vendetta/factions/FactionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/taco/vendetta/factions/FactionManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taco/vendetta/factions/commands/FactionCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/taco/vendetta/factions/commands/FactionCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taco/vendetta/sessions/PlayerSession.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/taco/vendetta/sessions/PlayerSession.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../help" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2ODQF8wJlz87OepLGQgLae86eef" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/radlt/OneDrive/Desktop/solar-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a12e1c91-efaa-495d-a2ad-e45179d704f7" name="Changes" comment="" />
+      <created>1681092565913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681092565913</updated>
+      <workItem from="1681092567038" duration="3495000" />
+      <workItem from="1681161488543" duration="6110000" />
+      <workItem from="1681171161846" duration="4422000" />
+      <workItem from="1681182177961" duration="176000" />
+      <workItem from="1681225958370" duration="999000" />
+      <workItem from="1681231159122" duration="1300000" />
+      <workItem from="1681265572854" duration="1377000" />
+      <workItem from="1681267980197" duration="777000" />
+      <workItem from="1681269176946" duration="599000" />
+      <workItem from="1681333968373" duration="19000" />
+      <workItem from="1681354496673" duration="809000" />
+      <workItem from="1681391309722" duration="6000" />
+      <workItem from="1681392583553" duration="159000" />
+      <workItem from="1681393739182" duration="371000" />
+      <workItem from="1681408703889" duration="2611000" />
+      <workItem from="1682556624009" duration="257000" />
+      <workItem from="1682651542010" duration="306000" />
+      <workItem from="1682909513562" duration="181000" />
+      <workItem from="1683080062807" duration="149000" />
+      <workItem from="1683081822916" duration="451000" />
+      <workItem from="1684963573381" duration="4893000" />
+      <workItem from="1684969781564" duration="1398000" />
+      <workItem from="1684971879979" duration="170000" />
+      <workItem from="1684975799360" duration="8000" />
+      <workItem from="1684978832676" duration="236000" />
+      <workItem from="1684983040083" duration="182000" />
+      <workItem from="1685019734700" duration="7399000" />
+      <workItem from="1685039085751" duration="289000" />
+      <workItem from="1685066733624" duration="2663000" />
+      <workItem from="1685073646867" duration="213000" />
+      <workItem from="1685249059263" duration="11000" />
+      <workItem from="1685303327801" duration="15000" />
+    </task>
+    <task id="LOCAL-00001" summary="Shenanigans">
+      <created>1685038661660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685038661660</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Shenanigans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shenanigans" />
+  </component>
+</project>

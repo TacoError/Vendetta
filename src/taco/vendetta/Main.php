@@ -46,11 +46,11 @@ class Main extends PluginBase {
             ],
             ["mysql" => "mysql.sql"],
         );
-        $this->db->executeGeneric("drop_players");
-        $this->db->executeGeneric("drop_factions");
+        $this->db->executeGeneric("players.drop");
+        $this->db->executeGeneric("factions.drip");
         $this->db->waitAll();
-        $this->db->executeGeneric("init");
-        $this->db->executeGeneric("init_factions");
+        $this->db->executeGeneric("players.init");
+        $this->db->executeGeneric("factions.init");
         $this->db->waitAll();
 
         new Manager();

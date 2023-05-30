@@ -36,3 +36,6 @@ English:
   kicked: "§dYou have been kicked from §5%s §dby §5%s§d."
   kicked-good: "§dYou have kicked §5%s §dfrom the faction."
   kicked-faction: "§5%s §dhas kicked §5%s §dfrom the faction."
+  must-not-be-owner-to-leave: "§dOwners can not leave the faction."
+  left-faction: "§dYou have left the faction."
+  left-faction-broadcast: "§5%s §dhas left the faction."

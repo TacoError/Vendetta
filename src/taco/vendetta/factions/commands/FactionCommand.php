@@ -6,9 +6,11 @@ use pocketmine\player\Player;
 use taco\vendetta\factions\commands\subcommands\ChatSubCommand;
 use taco\vendetta\factions\commands\subcommands\CreateSubCommand;
 use taco\vendetta\factions\commands\subcommands\DisbandSubCommand;
+use taco\vendetta\factions\commands\subcommands\HelpSubCommand;
 use taco\vendetta\factions\commands\subcommands\InviteSubCommand;
 use taco\vendetta\factions\commands\subcommands\JoinSubCommand;
 use taco\vendetta\factions\commands\subcommands\KickSubCommand;
+use taco\vendetta\factions\commands\subcommands\LeaveSubCommand;
 use taco\vendetta\Main;
 use taco\vendetta\Manager;
 
@@ -25,6 +27,8 @@ class FactionCommand extends BaseCommand {
         $this->registerSubCommand(new JoinSubCommand());
         $this->registerSubCommand(new ChatSubCommand());
         $this->registerSubCommand(new KickSubCommand());
+        $this->registerSubCommand(new LeaveSubCommand());
+        $this->registerSubCommand(new HelpSubCommand());
     }
 
     public function onRun(CommandSender $sender, string $aliasUsed, array $args) : void {

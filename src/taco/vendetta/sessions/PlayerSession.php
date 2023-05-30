@@ -34,7 +34,7 @@ class PlayerSession {
 
     public function __construct(Player $player) {
         $this->player = $player;
-        Main::getInstance()->getDB()->executeSelect("get_data", ["xuid" => $player->getXuid()], function(array $rows) : void {
+        Main::getInstance()->getDB()->executeSelect("players.get", ["xuid" => $player->getXuid()], function(array $rows) : void {
             if (count($rows) < 1) {
                 return;
             }
@@ -60,7 +60,7 @@ class PlayerSession {
     }
 
     public function close() : void {
-        Main::getInstance()->getDB()->executeGeneric("set_data", [
+        Main::getInstance()->getDB()->executeGeneric("players.set", [
             "xuid" => $this->player->getXuid(),
             "playerName" => $this->player->getName(),
             "kills" => $this->kills,

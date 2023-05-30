@@ -9,7 +9,7 @@ class FactionManager {
     private array $factions = [];
 
     public function __construct() {
-        Main::getInstance()->getDB()->executeSelect("get_all_factions", [], function(array $factions) : void {
+        Main::getInstance()->getDB()->executeSelect("factions.get.all", [], function(array $factions) : void {
             foreach($factions as $data) {
                 $this->factions[$data["name"]] = new Faction(
                     $data["name"],
@@ -56,7 +56,7 @@ class FactionManager {
 
     public function unsetFaction(string $name) : void {
         unset($this->factions[$name]);
-        Main::getInstance()->getDB()->executeGeneric("delete_faction", ["name" => $name]);
+        Main::getInstance()->getDB()->executeGeneric("factions.delete", ["name" => $name]);
     }
 
 }
